@@ -1,14 +1,14 @@
 {
     "testData": true,
     "deploySAP": true,
-    "deploySFDC": true,
-    "deployMarketing": true,
-    "deployDataMesh": true,
+    "deploySFDC": false,
+    "deployMarketing": false,
+    "deployDataMesh": false,
     "turboMode": true,
-    "projectIdSource": "",
-    "projectIdTarget": "",
-    "targetBucket": "",
-    "location": "US",
+    "projectIdSource": "gcp-bigquery-433810",
+    "projectIdTarget": "gcp-bigquery-433810",
+    "targetBucket": "sap_integration_dag",
+    "location": "europe-southwest1",
     "languages": [
         "E",
         "S"
@@ -32,8 +32,8 @@
     "SAP": {
         "deployCDC": true,
         "datasets": {
-            "cdc": "",
-            "raw": "",
+            "cdc": "SAP_Integration",
+            "raw": "SAP_Integration_Raw",
             "ml": "ML_MODELS",
             "reporting": "REPORTING"
         },
@@ -41,7 +41,7 @@
         "mandt": "100"
     },
     "SFDC": {
-        "deployCDC": true,
+        "deployCDC": false,
         "createMappingViews": true,
         "createPlaceholders": true,
         "datasets": {
@@ -51,12 +51,12 @@
         }
     },
     "marketing": {
-        "deployGoogleAds": true,
-        "deployCM360": true,
-        "deployTikTok": true,
-        "deployLiveRamp": true,
-        "deployMeta": true,
-        "deploySFMC": true,
+        "deployGoogleAds": false,
+        "deployCM360": false,
+        "deployTikTok": false,
+        "deployLiveRamp": false,
+        "deployMeta": false,
+        "deploySFMC": false,
         "dataflowRegion": "",
         "GoogleAds": {
             "deployCDC": true,
@@ -107,10 +107,10 @@
             }
         }
     },
-    "shareWithCredly": false,
+    "shareWithCredly": true,
     "userInfo": {
-        "email": "",
-        "firstName": "",
-        "lastName": ""
+        "email": "luciano.blanco@capgemini.com",
+        "firstName": "Luciano",
+        "lastName": "Blanco"
     }
 }
